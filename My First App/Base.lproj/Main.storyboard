@@ -40,6 +40,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="606" width="177" height="74"/>
                                 </variation>
+                                <connections>
+                                    <action selector="dec:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Vy-dx-cak"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diw-gd-H79">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -51,6 +54,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="203" y="606" width="177" height="74"/>
                                 </variation>
+                                <connections>
+                                    <action selector="inc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ad-m2-xpb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-aj-SLq">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -59,7 +65,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="209" width="231" height="333"/>
+                                    <rect key="frame" x="29" y="209" width="337" height="336"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -85,6 +91,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="numberlaber" destination="XaT-aj-SLq" id="CTa-LH-gty"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

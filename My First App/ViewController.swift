@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var numberlaber: UILabel!
+    
+     // Explicit
+    var intNumber:Int = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +24,29 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func dec(sender: AnyObject) {
+        intNumber -= 1
+        showNumer(intNumber)
+    
+      
+     
+    } // dec
+    
+    func showNumer(myNumber:Int) -> Void {
+        print("myNumber  \(myNumber)")
+        numberlaber.text=String(myNumber)
+    }
+    
+    
+    
+    @IBAction func inc(sender: AnyObject) {
+       intNumber += 1
+       showNumer(intNumber)
+       
+    } // inc
 
 
-}
+} // main class
 
